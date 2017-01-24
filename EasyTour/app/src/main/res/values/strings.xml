@@ -1,0 +1,5 @@
+<resources>
+    <string name="title_activity_base_datos_visu">BaseDatosVisu</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_cercanos">Cercanos</string>
+</resources>

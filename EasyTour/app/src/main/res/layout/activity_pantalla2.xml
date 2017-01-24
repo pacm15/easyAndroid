@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fccf08"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="vertical">
+
+        <ViewFlipper
+            android:id="@+id/ViewFlipper1"
+            android:layout_width="fill_parent"
+            android:layout_height="260dp">
+
+
+            <ImageView
+                android:id="@+id/ImageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="260dp"
+                android:src="@mipmap/loja1"/>
+
+            <ImageView
+                android:id="@+id/ImageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="260dp"
+                android:src="@mipmap/loja2"/>
+
+            <ImageView
+                android:id="@+id/ImageView3"
+                android:layout_width="fill_parent"
+                android:layout_height="260dp"
+                android:src="@mipmap/loja3"/>
+
+            <ImageView
+                android:id="@+id/ImageView4"
+                android:layout_width="fill_parent"
+                android:layout_height="260dp"
+                android:src="@mipmap/loja4"/>
+
+        </ViewFlipper>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin">
+
+            <Button
+                android:text="Add Market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAddMarket"
+                android:textSize="10dp"
+                android:background="@drawable/btn_lugares"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/planos"
+                android:background="@drawable/btn_planos" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lugares_cercanos"
+                android:background="@drawable/btn_lugares_cercanos" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin">
+
+            <Button
+                android:text="Add Rute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAddRute"
+                android:textSize="10dp"
+                android:background="@drawable/btn_lugares_cercanos"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lugares"
+                android:background="@drawable/btn_lugares" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rutas"
+                android:background="@drawable/btn_rutas" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
